@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--this will make site work with mobile  -->
+  <meta name="viewport" content="width+device-width, initial-scale=1">
+
+<!--this will link to gridlex  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+
+ <!--this will link to fontawesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+<!--this will link to googlefonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400i|Amatic+SC|Cabin+Sketch|Ek+Mukta:200|Josefin+Sans|Love+Ya+Like+A+Sister|Reenie+Beanie|Roboto|Rock+Salt|Waiting+for+the+Sunrise" rel="stylesheet">
+
+<!--this is the header -->
+<html>
+  <head class= "background">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Homework Assignment 1 </title>
+  </head>
+
+<body>
+
+           <!--This is the Nav Bar -->
+ <section>
+  <header>
+    <div>
+      <div>
+        <a href ="index.html" class="name grid-4"> Joshua Samson </a>
+      </div>
+        <nav class="grid">
+          <a href ="index.html" class="menu grid-8"> About </a>
+          <a href ="portfolio.html" class="menu grid-10">Portfolio  </a>
+          <a href="contact.html" class="menu grid-12">Contact </a>
+        </nav>
+    </div>
+  </header>
+ </section>
+ 
+ <!-- this is the contact form -->
+ <section class ="content">
+        <div class="module-small bg-dark">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Contact</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+          
+            <div class="silly">
+              <div class="col-sm-6 col-sm-offset-3">
+                <form id="contactForm" role="form" method="post" action="php/contact.php">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
+                  </div>
+                </form>
+                <div class="ajax-response font-alt" id="contactFormResponse"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>   
+     <!--This is the footer-->
+     
+     <footer>
+<div class="center">
+  <a href="www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+
+  <a href="www.soundcloud.com"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
+
+  <a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+
+  <a href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+</div>
+
+ </footer>
+ </section>
+</body>
+</html>
